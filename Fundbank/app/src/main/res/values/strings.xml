@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FundVerse</string>
+
+    <!-- Firebase -->
+    <!-- TODO: Replace with your actual Web Client ID from google-services.json -->
+    <string name="default_web_client_id">Web Client ID from google-services.json</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">Manage Your Funds</string>
+    <string name="onboarding_desc_1">Effortlessly manage legal entities, funds, and sub-funds all in
+        one place</string>
+
+    <string name="onboarding_title_2">Track Performance</string>
+    <string name="onboarding_desc_2">Monitor your investments with real-time insights and
+        comprehensive analytics</string>
+
+    <string name="onboarding_title_3">Secure and Reliable</string>
+    <string name="onboarding_desc_3">Your financial data is protected with enterprise-grade security</string>
+
+    <!-- Buttons -->
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="get_started">Get Started</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+
+    <!-- Messages -->
+    <string name="error_empty_email">Email cannot be empty</string>
+    <string name="error_invalid_email">Please enter a valid email</string>
+    <string name="error_empty_password">Password cannot be empty</string>
+    <string name="error_password_length">Password must be at least 6 characters</string>
+    <string name="error_passwords_dont_match">Passwords do not match</string>
+    <string name="error_empty_name">Name cannot be empty</string>
+    <string name="login_success">Login successful!</string>
+    <string name="signup_success">Account created successfully!</string>
+    <string name="reset_email_sent">Password reset email sent!</string>
+
+
+    <!-- Auth -->
+    <!--    <string name="welcome_back">Welcome Back</string>-->
+    <!--    <string name="login_to_continue">Login to continue to FundVerse</string>-->
+    <!--    <string name="email">Email</string>-->
+    <!--    <string name="password">Password</string>-->
+    <!--    <string name="forgot_password">Forgot Password?</string>-->
+    <!--    <string name="login">Login</string>-->
+    <!--    <string name="or_continue_with">Or continue with</string>-->
+    <!--    <string name="sign_in_with_google">Sign in with Google</string>-->
+    <!--    <string name="dont_have_account">Don\'t have an account?</string>-->
+
+
+    <!--    <string name="create_account">Create Account</string>-->
+    <!--    <string name="signup_to_get_started">Sign up to get started with FundVerse</string>-->
+    <!--    <string name="full_name">Full Name</string>-->
+    <!--    <string name="confirm_password">Confirm Password</string>-->
+    <!--    <string name="already_have_account">Already have an account?</string>-->
+    <!--    <string name="sign_in">Sign In</string>-->
+
+    <string name="reset_password">Reset Password</string>
+    <string name="reset_password_desc">Enter your email address and we\'ll send you a link to reset
+        your password</string>
+    <string name="send_reset_link">Send Reset Link</string>
+    <string name="back_to_login">Back to Login</string>
+
+    <!-- Validation -->
+    <!--    <string name="error_empty_field">This field cannot be empty</string>-->
+    <!--    <string name="error_invalid_email">Please enter a valid email address</string>-->
+    <!--    <string name="error_password_length">Password must be at least 6 characters</string>-->
+    <!--    <string name="error_passwords_dont_match">Passwords do not match</string>-->
+
+    <!-- Success/Error Messages -->
+    <!--    <string name="auth_success">Authentication successful</string>-->
+    <!--    <string name="auth_failed">Authentication failed</string>-->
+    <!--    <string name="signup_success">Account created successfully</string>-->
+    <!--    <string name="reset_email_sent">Password reset email sent</string>-->
+    <!--    <string name="reset_email_failed">Failed to send reset email</string>-->
+
+    <!-- Content Descriptions -->
+    <string name="app_logo">App Logo</string>
+    <string name="back_button">Back Button</string>
+    <string name="google_icon">Google Icon</string>
+    <!--    <string name="app_name">FundBank</string>-->
+    <string name="fund_management_system">Fund Management System</string>
+    <string name="legal_entities">Legal Entities</string>
+    <string name="management_entities">Management Entities</string>
+    <string name="funds">Funds</string>
+    <string name="sub_funds">Sub-Funds</string>
+    <string name="share_classes">Share Classes</string>
+    <string name="search">Search…</string>
+    <string name="no_data">No data available</string>
+    <string name="loading">Loading…</string>
+    <string name="error_loading">Error loading data</string>
+    <string name="retry">Retry</string>
+
+    <!-- Navigation -->
+    <string name="nav_legal">Legal Entities</string>
+    <string name="nav_management">Management</string>
+    <string name="nav_funds">Funds</string>
+    <string name="nav_subfunds">Sub-Funds</string>
+    <string name="nav_shareclass">Share Class</string>
+
+    <!-- Search and Empty State -->
+    <!--<string
+    name="search">Search legal entities…</string>-->
+    <string name="search_management">Search management entities…</string>
+    <string name="search_funds">Search funds…</string>
+    <string name="search_subfunds">Search sub-funds…</string>
+    <string name="search_shareclass">Search share classes…</string>
+
+
+    <!-- Actions -->
+    <string name="add_legal_entity">Add Legal Entity</string>
+    <string name="edit">Edit</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="add">Add</string>
+    <string name="save">Save</string>
+    <string name="refresh">Refresh</string>
+    <string name="charts">Charts</string>
+
+    <!-- Dialog Titles -->
+    <string name="add_legal_entity_title">Add Legal Entity</string>
+    <string name="edit_legal_entity_title">Edit Legal Entity</string>
+    <string name="delete_legal_entity_title">Delete Legal Entity</string>
+
+    <!-- Confirmation Messages -->
+    <string name="delete_confirmation">Are you sure you want to delete %s?</string>
+
+    <!-- Success Messages -->
+    <string name="legal_entity_added">Legal entity added successfully</string>
+    <string name="legal_entity_updated">Legal entity updated successfully</string>
+    <string name="legal_entity_deleted">Legal entity deleted successfully</string>
+
+    <!-- Error Messages -->
+    <string name="error_loading_data">Failed to load data</string>
+    <string name="error_adding">Failed to add</string>
+    <string name="error_updating">Failed to update</string>
+    <string name="error_deleting">Failed to delete</string>
+    <string name="error_required_field">This field is required</string>
+    <string name="missing_required_fields">Missing required fields</string>
+
+    <!-- Field Labels -->
+    <string name="le_id">LE ID</string>
+    <string name="lei">LEI</string>
+    <string name="legal_name">Legal Name</string>
+    <string name="jurisdiction">Jurisdiction</string>
+    <string name="entity_type">Entity Type</string>
+    <string name="mgmt_id">Management ID</string>
+    <string name="registration_no">Registration No</string>
+    <string name="domicile">Domicile</string>
+    <string name="fund_code">Fund Code</string>
+    <string name="fund_name">Fund Name</string>
+    <string name="fund_type">Fund Type</string>
+    <string name="base_currency">Base Currency</string>
+    <string name="isin">ISIN</string>
+    <string name="status">Status</string>
+
+    <!-- Action Buttons -->
+    <string name="view_management">Management</string>
+    <string name="view_funds">Funds</string>
+    <string name="view_subfunds">Sub-Funds</string>
+    <string name="view_graph">Graph</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
+
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--<resources>-->
+<!--<string
+name="app_name">Fund Management</string>-->
+<!--<string
+name="legal_entities">Legal Entities</string>-->
+<!--<string
+name="management_entities">Management Entities</string>-->
+<!--<string
+name="funds">Funds</string>-->
+<!--<string
+name="sub_funds">Sub-Funds</string>-->
+<!--<string
+name="share_classes">Share Classes</string>-->
+<!--<string
+name="search">Search…</string>-->
+<!--<string
+name="no_data">No data available</string>-->
+<!--<string
+name="loading">Loading…</string>-->
+<!--<string
+name="error_loading">Error loading data</string>-->
+<!--<string
+name="retry">Retry</string>-->
+<!--&lt;!&ndash;
+TODO: Remove or change this placeholder text &ndash;&gt;-->
+<!--<string
+name="hello_blank_fragment">Hello blank fragment</string>-->
+<!--</resources>-->

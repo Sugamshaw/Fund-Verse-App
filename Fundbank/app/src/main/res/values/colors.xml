@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_600">#2563EB</color>
+    <color name="blue_800">#1E40AF</color>
+    <color name="purple_500">#A855F7</color>
+    <color name="purple_700">#7C3AED</color>
+    <color name="orange_500">#F97316</color>
+    <color name="teal_600">#0D9488</color>
+    <color name="green_600">#16A34A</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray_50">#F9FAFB</color>
+    <color name="gray_100">#F3F4F6</color>
+    <color name="gray_700">#F3F4F6</color>
+    <color name="gray_200">#E5E7EB</color>
+    <color name="gray_600">#4B5563</color>
+    <color name="gray_900">#111827</color>
+    <color name="green_100">#DCFCE7</color>
+    <color name="green_800">#166534</color>
+
+    <color name="card_background">#F3F4F6</color>
+    <color name="screen_background">#FFFFFF </color>  <!-- Very light blue-gray -->
+<!--    <color name="screen_background">#F5F7FA </color>  &lt;!&ndash; Very light blue-gray &ndash;&gt;-->
+
+<!--    <color name="card_background">#F5F5F5   </color>-->
+<!--    <color name="screen_background">#FAFAFA   </color>  &lt;!&ndash; Very light blue-gray &ndash;&gt;-->
+
+    <color name="card_background1">#E3F2FD</color>
+    <color name="card_background2">#F5F5F5</color>  <!-- Very Light Gray -->
+    <!-- Text Colors -->
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#64748B</color>
+    <!-- Gray Scale -->
+<!--    <color name="gray_50">#FAFAFA</color>-->
+<!--    <color name="gray_200">#EEEEEE</color>-->
+<!--    <color name="gray_300">#E0E0E0</color>-->
+    <color name="gray_500">#9E9E9E</color>
+<!--    <color name="gray_600">#757575</color>-->
+<!--    <color name="gray_700">#616161</color>-->
+<!--    <color name="gray_900">#212121</color>-->
+</resources>

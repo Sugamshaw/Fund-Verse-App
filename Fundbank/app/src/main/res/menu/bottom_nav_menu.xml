@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_legal"
+        android:icon="@drawable/ic_building"
+        android:title="Legal" />
+    <item
+        android:id="@+id/nav_management"
+        android:icon="@drawable/ic_users"
+        android:title="Management" />
+    <item
+        android:id="@+id/nav_funds"
+        android:icon="@drawable/ic_briefcase"
+        android:title="Funds" />
+    <item
+        android:id="@+id/nav_subfunds"
+        android:icon="@drawable/ic_trending"
+        android:title="Sub-Funds" />
+    <item
+        android:id="@+id/nav_shareclass"
+        android:icon="@drawable/ic_pie_chart"
+        android:title="Share Class" />
+</menu>
