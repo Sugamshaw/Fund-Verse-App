@@ -76,7 +76,7 @@
 
 | Management Entities | Sub-Funds | Share Classes |
 |:------------------:|:---------:|:-------------:|
-| <img src="https://github.com/Sugamshaw/Fund-Verse-App/blob/main/images/Management%20View.jpg" width="250"/> | <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/subfunds.png" width="250"/> | <img src="https://github.com/Sugamshaw/Fund-Verse-App/blob/main/images/Share%20Classes.jpg" width="250"/> |
+| <img src="https://github.com/Sugamshaw/Fund-Verse-App/blob/main/images/Management%20View.jpg" width="250"/> | <img src="https://github.com/Sugamshaw/Fund-Verse-App/blob/main/images/Sub-Funds.jpg" width="250"/> | <img src="https://github.com/Sugamshaw/Fund-Verse-App/blob/main/images/Share%20Classes.jpg" width="250"/> |
 | **Management View** | **Sub-Fund Hierarchy** | **Share Class Metrics** |
 
 | Search & Filter | Add/Edit Form | Settings |
