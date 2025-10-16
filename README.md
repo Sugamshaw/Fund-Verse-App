@@ -21,7 +21,6 @@
 
 | Mobile App in Action | Backend Dashboard | Database Console |
 |:-------------------:|:----------------:|:----------------:|
-| <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/app_demo.gif" width="280"/> | <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/api_demo.gif" width="280"/> | <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/db_demo.gif" width="280"/> |
 | **📱 Android App** | **⚡ REST API** | **🗄️ Cloud SQL** |
 
 </div>
@@ -53,12 +52,10 @@
 
 | 🎨 Modern UI/UX | 🔐 Secure Auth | 📊 Real-time Data | ☁️ Cloud-Powered |
 |:--------------:|:-------------:|:----------------:|:---------------:|
-| <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/feature_ui.png" width="180"/> | <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/feature_auth.png" width="180"/> | <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/feature_sync.png" width="180"/> | <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/feature_cloud.png" width="180"/> |
 | Material Design 3 | Firebase Auth | Live Sync | GCP Infrastructure |
 
 | 🔍 Smart Search | 📈 Analytics | 🔄 CRUD Ops | 🌐 RESTful API |
 |:--------------:|:-----------:|:----------:|:--------------:|
-| <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/feature_search.png" width="180"/> | <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/feature_analytics.png" width="180"/> | <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/feature_crud.png" width="180"/> | <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/feature_api.png" width="180"/> |
 | Instant Filtering | Metrics Dashboard | Full Operations | Complete Endpoints |
 
 </div>
@@ -136,7 +133,6 @@
 
 | Cloud SQL Database | API Dashboard | System Flow |
 |:-----------------:|:-------------:|:-----------:|
-| <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/cloud_sql.png" width="300"/> | <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/api_endpoints.png" width="300"/> | <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/architecture_diagram.png" width="300"/> |
 | **GCP Cloud SQL** | **API Health Monitor** | **System Architecture** |
 
 </div>
@@ -179,7 +175,6 @@ The system uses 5 interconnected tables:
 
 | Entity Relationships Diagram |
 |:---------------------------:|
-| <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/database_schema.png" width="700"/> |
 | **Complete Database Schema with Foreign Keys** |
 
 </div>
@@ -238,7 +233,6 @@ Connect to MySQL and run schema creation script to create `fund_system` database
 
 | Cloud Run Deployment | Compute Engine Setup | App Engine Config |
 |:-------------------:|:-------------------:|:----------------:|
-| <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/deploy_cloudrun.png" width="260"/> | <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/deploy_compute.png" width="260"/> | <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/deploy_appengine.png" width="260"/> |
 | **Serverless** (Recommended) | **VM-based** (Full Control) | **Managed** (Auto-scaling) |
 | ✅ Auto-scaling<br>✅ No server management<br>✅ Pay per use | ✅ Full OS control<br>✅ Custom configurations<br>✅ Persistent storage | ✅ Zero-config scaling<br>✅ Built-in services<br>✅ Version control |
 
@@ -305,14 +299,12 @@ RecyclerView Update (UI)
 
 | Kotlin | Material Design | Firebase | Retrofit |
 |:------:|:---------------:|:--------:|:--------:|
-| <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/tech_kotlin.png" width="100"/> | <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/tech_material.png" width="100"/> | <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/tech_firebase.png" width="100"/> | <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/tech_retrofit.png" width="100"/> |
 | 100% Kotlin | MD3 Components | Auth & DB | API Client |
 
 ### Backend (API)
 
 | Python | Flask | MySQL | Google Cloud |
 |:------:|:-----:|:-----:|:------------:|
-| <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/tech_python.png" width="100"/> | <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/tech_flask.png" width="100"/> | <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/tech_mysql.png" width="100"/> | <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/tech_gcp.png" width="100"/> |
 | Python 3.8+ | REST Framework | Cloud SQL | GCP Platform |
 
 </div>
@@ -351,7 +343,6 @@ Fundverse/
 
 | Step 1: Login | Step 2: Dashboard | Step 3: Entity View | Step 4: Details |
 |:-------------:|:-----------------:|:-------------------:|:---------------:|
-| <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/flow_login.png" width="180"/> | <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/flow_dashboard.png" width="180"/> | <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/flow_list.png" width="180"/> | <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/flow_detail.png" width="180"/> |
 | Authenticate | Choose Entity | Browse & Search | View/Edit Data |
 
 </div>
@@ -377,7 +368,6 @@ Fundverse/
 
 | Postman Collection | API Health Monitor | Test Coverage |
 |:-----------------:|:------------------:|:-------------:|
-| <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/test_postman.png" width="280"/> | <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/test_health.png" width="280"/> | <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/test_coverage.png" width="280"/> |
 | Complete API Collection | Endpoint Monitoring | Unit & Integration Tests |
 
 </div>
@@ -413,7 +403,6 @@ Fundverse/
 
 | App Performance | API Response Times | Database Metrics |
 |:---------------:|:------------------:|:----------------:|
-| <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/metrics_app.png" width="280"/> | <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/metrics_api.png" width="280"/> | <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/metrics_db.png" width="280"/> |
 | UI Render: <50ms | Avg Response: <200ms | Query Time: <100ms |
 | Memory: Optimized | Uptime: 99.9% | Connection Pool: Active |
 
@@ -449,7 +438,6 @@ Fundverse/
 
 | Development | Staging | Production |
 |:----------:|:-------:|:----------:|
-| <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/env_dev.png" width="280"/> | <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/env_staging.png" width="280"/> | <img src="https://raw.githubusercontent.com/Sugamshaw/Fundverseappcode/master/screenshots/env_prod.png" width="280"/> |
 | **Local Setup** | **Testing Environment** | **Live Deployment** |
 | `localhost:8080` | `staging.fundverse.com` | `api.fundverse.com` |
 | SQLite/Local MySQL | Cloud SQL (Dev) | Cloud SQL (Prod) |
