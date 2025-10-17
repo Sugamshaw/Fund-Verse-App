@@ -484,7 +484,7 @@ copies or substantial portions of the Software.
 
 - **Email**: sugamshaw2002@gmail.com
 - **Issues**: [GitHub Issues](https://github.com/Sugamshaw/Fundverseappcode/issues)
-- **Documentation**: [Wiki](https://github.com/Sugamshaw/Fundverseappcode/README.md)
+- **Documentation**: [Readme file](https://github.com/Sugamshaw/Fund-Verse-App/blob/main/README.md)
 
 ## 🙏 Acknowledgments
 
