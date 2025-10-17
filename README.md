@@ -482,9 +482,9 @@ copies or substantial portions of the Software.
 
 ## 📞 Support & Contact
 
-- **Email**: support@fundverse.com
+- **Email**: sugamshaw2002@gmail.com
 - **Issues**: [GitHub Issues](https://github.com/Sugamshaw/Fundverseappcode/issues)
-- **Documentation**: [Wiki](https://github.com/Sugamshaw/Fundverseappcode/wiki)
+- **Documentation**: [Wiki](https://github.com/Sugamshaw/Fundverseappcode/README.md)
 
 ## 🙏 Acknowledgments
 
