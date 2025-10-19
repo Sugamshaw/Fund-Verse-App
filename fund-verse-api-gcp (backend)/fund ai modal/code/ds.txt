@@ -1,0 +1,11 @@
+df.to_csv(r'C:\Users\SUGAM SHAW\OneDrive\Desktop\fund ai\output\processed_fund_data.csv', index=False)
+
+
+
+df = predictor.load_and_merge_data(
+        r'C:\Users\SUGAM SHAW\OneDrive\Desktop\fund ai\input_database\legal_entity.csv',
+        r'C:\Users\SUGAM SHAW\OneDrive\Desktop\fund ai\input_database\management_entity.csv',
+        r'C:\Users\SUGAM SHAW\OneDrive\Desktop\fund ai\input_database\fund_master.csv',
+        r'C:\Users\SUGAM SHAW\OneDrive\Desktop\fund ai\input_database\sub_fund.csv',
+        r'C:\Users\SUGAM SHAW\OneDrive\Desktop\fund ai\input_database\share_class.csv'
+    )

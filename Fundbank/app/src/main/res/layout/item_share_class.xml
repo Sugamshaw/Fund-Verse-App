@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="4dp"
+    android:layout_marginVertical="6dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/gray_200"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/card_background">
+
+        <!-- Header Section with Gradient -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_header_gradient_blue"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- Share Class ID -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Share Class"
+                        android:textSize="10sp"
+                        android:textColor="@color/white"
+                        android:alpha="0.8"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.05" />
+
+                    <TextView
+                        android:id="@+id/tv_sc_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SC000001"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="sans-serif-medium" />
+                </LinearLayout>
+
+                <!-- Status Badge -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="@color/green_800"
+                    android:layout_marginEnd="8dp">
+
+                    <TextView
+                        android:id="@+id/tv_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ACTIVE"
+                        android:textSize="10sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:paddingHorizontal="12dp"
+                        android:paddingVertical="6dp"
+                        android:letterSpacing="0.05" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Edit Button -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#33FFFFFF"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="#66FFFFFF">
+
+                    <ImageButton
+                        android:id="@+id/btn_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_edit"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:padding="8dp"
+                        android:tint="@color/white"
+                        android:contentDescription="Edit" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- Content Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Fund ID (Clickable) -->
+            <LinearLayout
+                android:id="@+id/btn_tv_fund_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:background="@drawable/clickable_background"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_link"
+                    android:tint="@color/blue_600"
+                    android:layout_marginEnd="6dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fund: "
+                    android:textSize="12sp"
+                    android:textColor="@color/blue_600" />
+
+                <TextView
+                    android:id="@+id/tv_fund_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FND001"
+                    android:textSize="12sp"
+                    android:textColor="@color/blue_600"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- ISIN SC -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_id"
+                    android:tint="@color/gray_600"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:id="@+id/tv_isin_sc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LU1234567890"
+                    android:textSize="13sp"
+                    android:textColor="@color/gray_900"
+                    android:fontFamily="monospace" />
+            </LinearLayout>
+
+            <!-- Details Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <!-- Currency -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_currency"
+                        android:tint="@color/gray_600"
+                        android:layout_marginEnd="6dp" />
+
+                    <TextView
+                        android:id="@+id/tv_currency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="USD"
+                        android:textSize="13sp"
+                        android:textColor="@color/gray_900"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- Distribution -->
+                <TextView
+                    android:id="@+id/tv_distribution"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ACCUMULATING"
+                    android:textSize="11sp"
+                    android:textColor="@color/gray_600"
+                    android:background="@drawable/chip_background_alt"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="4dp" />
+            </LinearLayout>
+
+            <!-- Performance Metrics Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/gray_100"
+                android:layout_marginBottom="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <!-- Fees Row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+
+                        <!-- Management Fee -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mgmt Fee"
+                                android:textSize="10sp"
+                                android:textColor="@color/gray_600"
+                                android:textStyle="bold"
+                                android:letterSpacing="0.05" />
+
+                            <TextView
+                                android:id="@+id/tv_fee_mgmt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1.50%"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/blue_600"
+                                android:layout_marginTop="4dp" />
+                        </LinearLayout>
+
+                        <!-- Performance Fee -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Perf Fee"
+                                android:textSize="10sp"
+                                android:textColor="@color/gray_600"
+                                android:textStyle="bold"
+                                android:letterSpacing="0.05" />
+
+                            <TextView
+                                android:id="@+id/tv_perf_fee"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.50%"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gray_900"
+                                android:layout_marginTop="4dp" />
+                        </LinearLayout>
+
+                        <!-- Expense Ratio -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="TER"
+                                android:textSize="10sp"
+                                android:textColor="@color/gray_600"
+                                android:textStyle="bold"
+                                android:letterSpacing="0.05" />
+
+                            <TextView
+                                android:id="@+id/tv_expense_ratio"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.75%"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gray_900"
+                                android:layout_marginTop="4dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Divider -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_200"
+                        android:layout_marginVertical="8dp" />
+
+                    <!-- NAV & AUM Row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!-- NAV -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NAV per Share"
+                                android:textSize="10sp"
+                                android:textColor="@color/gray_600"
+                                android:textStyle="bold"
+                                android:letterSpacing="0.05" />
+
+                            <TextView
+                                android:id="@+id/tv_nav"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="$105.23"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gray_900"
+                                android:layout_marginTop="4dp" />
+                        </LinearLayout>
+
+                        <!-- AUM -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="end">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="AUM"
+                                android:textSize="10sp"
+                                android:textColor="@color/gray_600"
+                                android:textStyle="bold"
+                                android:letterSpacing="0.05" />
+
+                            <TextView
+                                android:id="@+id/tv_aum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="$250.5M"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/green_600"
+                                android:layout_marginTop="4dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<com.google.android.material.card.MaterialCardView-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_margin="8dp"-->
+<!--    app:cardElevation="2dp"-->
+<!--    app:cardCornerRadius="8dp">-->
+<!--    &lt;!&ndash;    //itemsshareclassentity&ndash;&gt;-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="16dp">-->
+
+<!--        &lt;!&ndash; 🔹 Header Row &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:gravity="center_vertical">-->
+
+<!--            &lt;!&ndash; Share Class ID &ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:id="@+id/tv_sc_id"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="SC000001"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textColor="@color/green_600" />-->
+
+<!--            &lt;!&ndash; Status Label &ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:id="@+id/tv_status"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="ACTIVE"-->
+<!--                android:textSize="12sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:paddingHorizontal="12dp"-->
+<!--                android:paddingVertical="4dp"-->
+<!--                android:background="@drawable/chip_background"-->
+<!--                />-->
+
+<!--            &lt;!&ndash; ✏️ Edit Button &ndash;&gt;-->
+<!--            <ImageButton-->
+<!--                android:id="@+id/btn_edit"-->
+<!--                android:layout_width="32dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:layout_marginStart="4dp"-->
+<!--                android:src="@android:drawable/ic_menu_edit"-->
+<!--                android:background="?attr/selectableItemBackgroundBorderless"-->
+<!--                android:contentDescription="@string/edit" />-->
+<!--        </LinearLayout>-->
+
+<!--        &lt;!&ndash; 🔹 Fund ID &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/tv_fund_id"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Fund ID: FND001"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/blue_600"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"-->
+<!--            android:foreground="?attr/selectableItemBackground"-->
+<!--            android:layout_marginBottom="6dp" />-->
+
+<!--        &lt;!&ndash; 🔹 ISIN SC &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/tv_isin_sc"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="ISIN: LU1234567890"-->
+<!--            android:textSize="13sp"-->
+<!--            android:textColor="@color/gray_900"-->
+<!--            android:fontFamily="monospace"-->
+<!--            android:layout_marginBottom="4dp" />-->
+
+<!--        &lt;!&ndash; 🔹 Currency &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/tv_currency"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Currency: USD"-->
+<!--            android:textSize="13sp"-->
+<!--            android:textColor="@color/gray_600"-->
+<!--            android:layout_marginBottom="4dp" />-->
+
+<!--        &lt;!&ndash; 🔹 Distribution &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/tv_distribution"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Distribution: ACCUMULATING"-->
+<!--            android:textSize="13sp"-->
+<!--            android:textColor="@color/gray_600"-->
+<!--            android:layout_marginBottom="8dp" />-->
+
+<!--        &lt;!&ndash; Divider &ndash;&gt;-->
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:background="@color/gray_200"-->
+<!--            android:layout_marginVertical="6dp" />-->
+
+<!--        &lt;!&ndash; 🔹 Fee, NAV, and AUM Row &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_marginBottom="4dp">-->
+
+<!--            &lt;!&ndash; Mgmt Fee &ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Mgmt Fee"-->
+<!--                    android:textSize="10sp"-->
+<!--                    android:textColor="@color/gray_600" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_fee_mgmt"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="1.50%"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="@color/blue_600" />-->
+<!--            </LinearLayout>-->
+
+<!--            &lt;!&ndash; Perf Fee &ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Perf Fee"-->
+<!--                    android:textSize="10sp"-->
+<!--                    android:textColor="@color/gray_600" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_perf_fee"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="0.50%"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="@color/gray_900" />-->
+<!--            </LinearLayout>-->
+
+<!--            &lt;!&ndash; Expense Ratio &ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Expense Ratio"-->
+<!--                    android:textSize="10sp"-->
+<!--                    android:textColor="@color/gray_600" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_expense_ratio"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="0.75%"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="@color/gray_900" />-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+
+<!--        &lt;!&ndash; 🔹 NAV & AUM &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            &lt;!&ndash; NAV &ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="NAV"-->
+<!--                    android:textSize="10sp"-->
+<!--                    android:textColor="@color/gray_600" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_nav"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="$105.23"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="@color/gray_900" />-->
+<!--            </LinearLayout>-->
+
+<!--            &lt;!&ndash; AUM &ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="AUM"-->
+<!--                    android:textSize="10sp"-->
+<!--                    android:textColor="@color/gray_600" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_aum"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="$250.5M"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="@color/green_600" />-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+<!--</com.google.android.material.card.MaterialCardView>-->

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Enhanced NAV Prediction Card with Better UI/UX -->
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    app:strokeWidth="0dp"
+    android:backgroundTint="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <!-- Fund Icon Circle -->
+        <View
+            android:id="@+id/icon_background"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/gradient_circle_blue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_fund_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_fund_placeholder"
+            android:tint="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/icon_background"
+            app:layout_constraintEnd_toEndOf="@id/icon_background"
+            app:layout_constraintStart_toStartOf="@id/icon_background"
+            app:layout_constraintTop_toTopOf="@id/icon_background" />
+
+        <!-- Fund Name -->
+        <TextView
+            android:id="@+id/tv_fund_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="Global Equity Fund"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintStart_toEndOf="@id/icon_background"
+            app:layout_constraintEnd_toStartOf="@id/tv_trend_icon"
+            app:layout_constraintTop_toTopOf="@id/icon_background" />
+
+        <!-- Fund ID -->
+        <TextView
+            android:id="@+id/tv_fund_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="F000001"
+            android:textSize="13sp"
+            android:textColor="@color/text_primary"
+            android:fontFamily="sans-serif"
+            app:layout_constraintStart_toStartOf="@id/tv_fund_name"
+            app:layout_constraintEnd_toEndOf="@id/tv_fund_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_fund_name" />
+
+        <!-- Trend Icon with Background -->
+        <View
+            android:id="@+id/trend_background"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:background="@drawable/circle_background_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/icon_background" />
+
+        <TextView
+            android:id="@+id/tv_trend_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📈"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@id/trend_background"
+            app:layout_constraintEnd_toEndOf="@id/trend_background"
+            app:layout_constraintStart_toStartOf="@id/trend_background"
+            app:layout_constraintTop_toTopOf="@id/trend_background" />
+
+        <!-- Main Prediction Section -->
+        <LinearLayout
+            android:id="@+id/layout_prediction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/rounded_background_gradient"
+            android:padding="20dp"
+            android:elevation="2dp"
+            app:layout_constraintTop_toBottomOf="@id/icon_background">
+
+            <!-- Current NAV -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Current NAV"
+                    android:textSize="11sp"
+                    android:textColor="@color/text_primary"
+                    android:textAllCaps="true"
+                    android:letterSpacing="0.05"
+                    android:fontFamily="sans-serif-medium" />
+
+                <TextView
+                    android:id="@+id/tv_current_nav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="$125.50"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"
+                    android:fontFamily="sans-serif-medium" />
+
+            </LinearLayout>
+
+            <!-- Arrow with Animation Hint -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→"
+                android:textSize="36sp"
+                android:textColor="@color/ai_purple"
+                android:layout_marginHorizontal="8dp" />
+
+            <!-- Predicted NAV -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Predicted NAV"
+                    android:textSize="11sp"
+                    android:textColor="@color/text_primary"
+                    android:textAllCaps="true"
+                    android:letterSpacing="0.05"
+                    android:fontFamily="sans-serif-medium" />
+
+                <TextView
+                    android:id="@+id/tv_predicted_nav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="$132.75"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/success_green"
+                    android:fontFamily="sans-serif-medium" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Stats Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:background="@drawable/rounded_background_light_gray"
+            android:padding="16dp"
+            app:layout_constraintTop_toBottomOf="@id/layout_prediction">
+
+            <!-- Change -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_trending_up"
+                    android:tint="@color/text_primary"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change"
+                    android:textSize="10sp"
+                    android:textColor="@color/text_primary"
+                    android:textAllCaps="true"
+                    android:fontFamily="sans-serif" />
+
+                <TextView
+                    android:id="@+id/tv_change_percentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="+5.77%"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/success_green"
+                    android:fontFamily="sans-serif-medium" />
+
+            </LinearLayout>
+
+            <!-- Confidence -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_check_circle"
+                    android:tint="@color/text_primary"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Confidence"
+                    android:textSize="10sp"
+                    android:textColor="@color/text_primary"
+                    android:textAllCaps="true"
+                    android:fontFamily="sans-serif" />
+
+                <TextView
+                    android:id="@+id/tv_confidence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="84.72%"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/ai_purple"
+                    android:fontFamily="sans-serif-medium" />
+
+            </LinearLayout>
+
+            <!-- Target Date -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_calendar"
+                    android:tint="@color/text_primary"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Target"
+                    android:textSize="10sp"
+                    android:textColor="@color/text_primary"
+                    android:textAllCaps="true"
+                    android:fontFamily="sans-serif" />
+
+                <TextView
+                    android:id="@+id/tv_prediction_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Jan 2026"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"
+                    android:fontFamily="sans-serif-medium" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="4dp"
+    android:layout_marginVertical="6dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/gray_200"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/card_background">
+
+        <!-- Header Section with Gradient -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_header_gradient_blue"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- SubFund ID -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sub-Fund"
+                        android:textSize="10sp"
+                        android:textColor="@color/white"
+                        android:alpha="0.8"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.05" />
+
+                    <TextView
+                        android:id="@+id/tv_subfund_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SF000001"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="sans-serif-medium" />
+                </LinearLayout>
+
+                <!-- Edit Button -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#33FFFFFF"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="#66FFFFFF">
+
+                    <ImageButton
+                        android:id="@+id/btn_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_edit"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:padding="8dp"
+                        android:tint="@color/white"
+                        android:contentDescription="Edit" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- Content Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Parent Fund ID (Clickable) -->
+            <LinearLayout
+                android:id="@+id/btn_tv_parent_fund_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:background="@drawable/clickable_background"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_link"
+                    android:tint="@color/blue_600"
+                    android:layout_marginEnd="6dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Parent Fund: "
+                    android:textSize="12sp"
+                    android:textColor="@color/blue_600" />
+
+                <TextView
+                    android:id="@+id/tv_parent_fund_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="F000001"
+                    android:textSize="12sp"
+                    android:textColor="@color/blue_600"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Management ID (Clickable) -->
+            <LinearLayout
+                android:id="@+id/btn_tv_mgmt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:background="@drawable/clickable_background"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_link"
+                    android:tint="@color/blue_600"
+                    android:layout_marginEnd="6dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MGMT: "
+                    android:textSize="12sp"
+                    android:textColor="@color/blue_600" />
+
+                <TextView
+                    android:id="@+id/tv_mgmt_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MG001"
+                    android:textSize="12sp"
+                    android:textColor="@color/blue_600"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Legal Entity ID (Clickable) -->
+            <LinearLayout
+                android:id="@+id/btn_tv_le_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:background="@drawable/clickable_background"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_link"
+                    android:tint="@color/blue_600"
+                    android:layout_marginEnd="6dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LE: "
+                    android:textSize="12sp"
+                    android:textColor="@color/blue_600" />
+
+                <TextView
+                    android:id="@+id/tv_le_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LE000001"
+                    android:textSize="12sp"
+                    android:textColor="@color/blue_600"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- ISIN -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_id"
+                    android:tint="@color/gray_600"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:id="@+id/tv_isin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LU1234567890"
+                    android:textSize="13sp"
+                    android:textColor="@color/gray_900"
+                    android:fontFamily="monospace" />
+            </LinearLayout>
+
+            <!-- Currency -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_currency"
+                    android:tint="@color/gray_600"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:id="@+id/tv_currency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EUR"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray_900"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_200"
+                android:layout_marginVertical="8dp" />
+
+            <!-- Action Button -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_shareclass"
+                    style="@style/Widget.Material3.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Share Classes"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:icon="@drawable/ic_share_class"
+                    app:iconSize="18dp"
+                    app:iconTint="@color/green_600"
+                    android:textColor="@color/green_600" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<com.google.android.material.card.MaterialCardView-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_margin="8dp"-->
+<!--    app:cardElevation="2dp"-->
+<!--    app:cardCornerRadius="10dp"-->
+<!--    android:foreground="?attr/selectableItemBackground"-->
+<!--    android:clickable="true"-->
+<!--    android:focusable="true">-->
+<!--    &lt;!&ndash;    //itemssubfundsentity&ndash;&gt;-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="16dp">-->
+
+<!--        &lt;!&ndash; 🔹 Header Row: SubFund ID + Status + Edit &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:layout_marginBottom="8dp">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_subfund_id"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="SF000001"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textColor="@color/teal_600" />-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/btn_edit"-->
+<!--                android:layout_width="32dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:src="@android:drawable/ic_menu_edit"-->
+<!--                android:background="?attr/selectableItemBackgroundBorderless"-->
+<!--                android:contentDescription="@string/edit" />-->
+<!--        </LinearLayout>-->
+
+<!--        &lt;!&ndash; 🔹 Parent Fund &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/tv_parent_fund_id"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Parent Fund: F000001"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textColor="@color/blue_600"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginBottom="4dp"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"-->
+<!--            android:foreground="?attr/selectableItemBackgroundBorderless" />-->
+
+<!--        &lt;!&ndash; 🔹 Management ID &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/tv_mgmt_id"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="MGMT ID: MG001"-->
+<!--            android:textSize="13sp"-->
+<!--            android:textColor="@color/blue_600"-->
+<!--            android:layout_marginBottom="4dp"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"-->
+<!--            android:foreground="?attr/selectableItemBackgroundBorderless" />-->
+
+<!--        &lt;!&ndash; 🔹 Legal Entity ID &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/tv_le_id"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="LE ID: LE000001"-->
+<!--            android:textSize="13sp"-->
+<!--            android:textColor="@color/blue_600"-->
+<!--            android:layout_marginBottom="4dp"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"-->
+<!--            android:foreground="?attr/selectableItemBackgroundBorderless" />-->
+
+<!--        &lt;!&ndash; 🔹 ISIN &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/tv_isin"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="ISIN: LU1234567890"-->
+<!--            android:textSize="13sp"-->
+<!--            android:textColor="@color/gray_900"-->
+<!--            android:fontFamily="monospace"-->
+<!--            android:layout_marginBottom="6dp" />-->
+
+<!--        &lt;!&ndash; 🔹 Currency &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:layout_marginTop="4dp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="18dp"-->
+<!--                android:layout_height="18dp"-->
+<!--                android:src="@drawable/ic_currency"-->
+<!--                android:tint="@color/gray_600"-->
+<!--                android:layout_marginEnd="6dp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_currency"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Currency: EUR"-->
+<!--                android:textSize="14sp"-->
+<!--                android:textColor="@color/gray_600" />-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:gravity="end">-->
+
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:id="@+id/btn_shareclass"-->
+<!--                style="@style/Widget.Material3.Button.OutlinedButton"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Share Classes"-->
+<!--                android:textSize="13sp" />-->
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
+<!--</com.google.android.material.card.MaterialCardView>-->

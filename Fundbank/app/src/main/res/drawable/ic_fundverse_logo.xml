@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- Circle background -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M60,60m-50,0a50,50 0,1 1,100 0a50,50 0,1 1,-100 0"/>
+
+    <!-- F letter styled as a fund chart -->
+    <path
+        android:fillColor="@color/blue_600"
+        android:pathData="M35,35 L55,35 L55,42 L42,42 L42,50 L52,50 L52,57 L42,57 L42,75 L35,75 Z"/>
+
+    <!-- V letter -->
+    <path
+        android:fillColor="@color/purple_500"
+        android:pathData="M60,35 L67,35 L72,60 L77,35 L84,35 L76,75 L68,75 Z"/>
+</vector>
